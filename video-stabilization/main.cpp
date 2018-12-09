@@ -222,7 +222,7 @@ int main(int argc, char **argv)
 
 		Mat cur2;
 
-		mycv::warpAffine(cur, cur2, T, cur.size(), 1, BORDER_REFLECT101);
+		cv::warpAffine(cur, cur2, T, cur.size(), 1, BORDER_REFLECT101);
 
 		cur2 = cur2(Range(vert_border, cur2.rows - vert_border), Range(HORIZONTAL_BORDER_CROP, cur2.cols - HORIZONTAL_BORDER_CROP));
 
