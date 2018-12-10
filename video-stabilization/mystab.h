@@ -70,4 +70,6 @@ namespace mycv {
 	void resize(InputArray src, OutputArray dst,
 		Size dsize, double fx = 0, double fy = 0,
 		int interpolation = INTER_LINEAR);
+
+	void movingAverage(vector<Trajectory> trajectory, vector<Trajectory>& smoothed_trajectory);
 }

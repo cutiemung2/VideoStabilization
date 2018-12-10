@@ -43,7 +43,7 @@ Mat mycv::resizeForPyramid(const Mat src, const int maxLevel) {
 	unsigned char* destData = dest.data;
 
 	for (int y = 0; y < height; y++) {
-		memcpy_s(destData + y * width, width, srcData + y * src.cols, src.cols);
+		memcpy(destData + y * width, srcData + y * src.cols, sizeof(unsigned char) * width);
 	}
 
 	return dest;

@@ -5,5 +5,4 @@
 
 namespace mycv {
 
-	void movingAverage(vector<Trajectory> trajectory, vector<Trajectory>& smoothed_trajectory);
 }
